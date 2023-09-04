@@ -1,0 +1,239 @@
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --sec-color: rgb(255, 252, 223);
+  --accent-color: rgb(105, 240, 211);
+  --box-shadow: 5px 6px 8px rgb(25, 25, 25);
+  --gold: rgba(184, 168, 23, 0.93);
+}
+
+body {
+  background-image: url("https://img.wallpapic.com/i1862-037-811/medium/space-purple-blue-astronomy-wallpaper.jpg");
+}
+
+.butterfly {
+  display: block;
+  margin: 0 auto;
+}
+
+.sparkles {
+  display: inline;
+  margin: 0 auto;
+}
+h1,
+h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Codystar", cursive;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 25px !important;
+  }
+}
+
+h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: small !important;
+  font-size: 30px;
+  color: var(--gold);
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 20px !important;
+  }
+}
+.container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bio {
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid var(--gold);
+  box-shadow: var(--box-shadow);
+  color: var(--gold);
+}
+
+.col-3 {
+  display: inline;
+}
+#contacts {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: aliceblue;
+  font-family: "Griffy", cursive;
+  margin: 20px 0;
+}
+.about-content {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+#mail-to {
+  display: block;
+  text-align: center;
+  margin: 0 0 50px 0;
+  color: var(--gold);
+  font-family: "Work Sans", cursive;
+}
+
+.return-home:hover {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  color: var(--primary-color);
+}
+
+#mail-to:hover {
+  transition: all 200ms ease-in-out;
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(125, 116, 125);
+}
+
+.contact-us {
+  padding: 12px 16px;
+  font-family: "Work Sans", cursive;
+  font-weight: 300px;
+  background-color: var(--accent-color);
+  color: var(--sec-color);
+  transform: scale(1.05);
+}
+
+.contact-us:hover {
+  border: 2px solid var(--accent-color);
+  background: var(--sec-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.about-me {
+  border: 2px solid var(--accent-color);
+  font-family: "Work Sans", cursive;
+  font-weight: 300px;
+  transition: all 200ms ease-in-out;
+  background: var(--sec-color);
+  padding: 10px 20px;
+  color: var(--primary-color);
+}
+
+.about-me:hover {
+  background-color: var(--accent-color);
+  box-shadow: var(--box-shadow);
+  transform: scale(1.05);
+  color: var(--sec-color);
+}
+
+.nav-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.nav-links a {
+  margin: 20px;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: var(--box-shadow);
+}
+
+p {
+  color: rgb(195, 195, 195);
+}
+hr {
+  border: 1px solid rgb(168, 168, 168);
+}
+
+.text-start {
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--gold);
+  text-align: center !important;
+  border-radius: 8px;
+}
+
+.button-73 {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Work Sans", cursive;
+  font-size: small !important;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0 0 10px 0;
+  outline: none;
+  padding: 6px 10px !important;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: var(--gold);
+  box-shadow: #523c0e 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
+#about-section-font {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.active {
+  color: white !important;
+  font-family: "Griffy", cursive;
+}
+
+.nav-link {
+  color: rgb(152, 192, 255);
+  font-family: "Griffy", cursive;
+}
+
+.nav-link:hover {
+  color: rgb(136, 255, 1);
+  font-size: 30px;
+}
