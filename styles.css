@@ -73,6 +73,9 @@ h1 {
   justify-content: center;
 }
 
+.robot {
+  max-width: 1000px;
+}
 .col-3 {
   display: inline;
 }
