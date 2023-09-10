@@ -72,10 +72,6 @@ h1 {
   gap: 20px;
   justify-content: center;
 }
-
-.robot {
-  max-width: 1000px;
-}
 .col-3 {
   display: inline;
 }
