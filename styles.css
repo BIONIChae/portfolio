@@ -1,13 +1,28 @@
 :root {
   --primary-color: rgb(0, 0, 0);
   --sec-color: rgb(255, 252, 223);
-  --accent-color: rgb(105, 240, 211);
+  --accent-color: rgb(43, 255, 209);
   --box-shadow: 5px 6px 8px rgb(25, 25, 25);
-  --gold: rgba(184, 168, 23, 0.93);
+  --gold: rgb(255, 111, 0);
 }
 
 body {
-  background-image: url("https://img.wallpapic.com/i1862-037-811/medium/space-purple-blue-astronomy-wallpaper.jpg");
+  background: var(--accent-color);
+}
+
+.section {
+  background-color: rgb(43, 255, 209);
+  padding: 50px;
+}
+
+@keyframes spin {
+  0%,
+  15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .butterfly {
@@ -27,22 +42,23 @@ h3 {
 
 h1 {
   font-size: 80px;
-  font-family: "Codystar", cursive;
-  font-weight: 200;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
   margin-bottom: 50px;
 }
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 25px !important;
+    font-size: 16px !important;
+    padding-right: 60px !important;
+    padding-left: 60px;
   }
 }
 
-h2 {
-  font-family: "Press Start 2P", cursive;
-  font-size: small !important;
-  font-size: 30px;
-  color: var(--gold);
+.bio {
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 600px) {
@@ -57,23 +73,14 @@ h2 {
   justify-content: center;
 }
 
-.bio {
-  text-align: center;
-  margin: 0 auto;
-  border: 2px solid var(--gold);
-  box-shadow: var(--box-shadow);
-  color: var(--gold);
-}
-
 .col-3 {
   display: inline;
 }
 #contacts {
   text-align: center;
   font-size: 30px;
-  font-weight: 600;
   color: aliceblue;
-  font-family: "Griffy", cursive;
+  font-family: "Comfortaa", cursive;
   margin: 20px 0;
 }
 .about-content {
@@ -110,16 +117,16 @@ a {
   padding: 12px 16px;
   font-family: "Work Sans", cursive;
   font-weight: 300px;
-  background-color: var(--accent-color);
+  background-color: var(--gold);
   color: var(--sec-color);
   transform: scale(1.05);
 }
 
 .contact-us:hover {
-  border: 2px solid var(--accent-color);
   background: var(--sec-color);
   color: var(--primary-color);
   transform: scale(1.05);
+  transition: 1s ease-in-out;
 }
 
 .about-me {
@@ -156,17 +163,18 @@ a {
 }
 
 p {
-  color: rgb(195, 195, 195);
+  color: rgb(0, 0, 0);
+  font-family: "Jost", sans-serif;
 }
 hr {
   border: 1px solid rgb(168, 168, 168);
 }
 
 .text-start {
-  font-family: "Press Start 2P", cursive;
-  font-size: 30px;
+  font-family: "Work Sans", serif;
+  font-size: 40px;
   font-weight: 600;
-  color: var(--gold);
+  color: black;
   text-align: center !important;
   border-radius: 8px;
 }
@@ -199,7 +207,7 @@ hr {
 
 .button-73:hover {
   background-color: var(--gold);
-  box-shadow: #523c0e 0 -6px 8px inset;
+  box-shadow: #461010 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
@@ -214,26 +222,87 @@ hr {
   }
 }
 
+.glitch {
+  display: block;
+  margin: 0 auto;
+  padding: none;
+}
+
 #about-section-font {
   font-size: 60px;
   font-weight: 400;
 }
 
 .navbar {
-  background-color: rgb(0, 0, 0) !important;
+  background-color: var(--accent-color) !important;
 }
 
 .active {
   color: white !important;
-  font-family: "Griffy", cursive;
+  font-family: "Work Sans", cursive;
 }
 
 .nav-link {
-  color: rgb(152, 192, 255);
-  font-family: "Griffy", cursive;
+  color: rgb(245, 255, 152);
+  font-family: "Work Sans", cursive;
 }
 
 .nav-link:hover {
-  color: rgb(136, 255, 1);
+  color: rgb(255, 162, 162);
   font-size: 30px;
 }
+
+.block-one {
+  background-color: rgb(255, 230, 0);
+  padding: 40px;
+}
+
+.block-two {
+  background-color: rgb(255, 255, 255);
+}
+
+.block-three {
+  background-color: rgb(255, 255, 255);
+}
+
+.block-four {
+  background-color: rgb(255, 86, 63);
+  padding: 40px;
+}
+.block-five {
+  background-color: rgb(153, 255, 0);
+  padding: 40px;
+}
+
+.block-six {
+  background-color: white;
+  padding: 40px;
+}
+.section-five {
+  background-color: var(--accent-color);
+  padding: 50px;
+  color: rgb(124, 124, 255);
+  font-family: "Comfortaa", cursive;
+  font-size: 40px;
+}
+
+.section-one {
+  background: rgb(189, 255, 97);
+}
+
+.web-heading {
+  font-family: "VT323", monospace;
+  font-size: 200px;
+}
+
+.dark {
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #3d111c,
+    #770e27,
+    #b20428,
+    #eb121a
+  );
+}
+
