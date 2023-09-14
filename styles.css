@@ -47,7 +47,7 @@ h1 {
   }
 }
 
-.link:hover {
+.link:hover, .link:active {
   color: rgb(213, 213, 213);
 }
 
