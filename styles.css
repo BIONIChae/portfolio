@@ -3,26 +3,14 @@
   --sec-color: rgb(255, 252, 223);
   --accent-color: rgb(43, 255, 209);
   --box-shadow: 5px 6px 8px rgb(25, 25, 25);
-  --gold: rgb(255, 111, 0);
 }
 
 body {
-  background: var(--accent-color);
+  background: rgb(255, 165, 29);
 }
 
 .section {
-  background-color: rgb(43, 255, 209);
-  padding: 50px;
-}
-
-@keyframes spin {
-  0%,
-  15% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  background-color: rgb(255, 165, 29);
 }
 
 .butterfly {
@@ -30,14 +18,18 @@ body {
   margin: 0 auto;
 }
 
-.sparkles {
-  display: inline;
-  margin: 0 auto;
-}
 h1,
 h3 {
   text-align: center;
   color: rgb(255, 255, 255);
+
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 50px;
+  color: white;
+  margin-top: 50px;
 }
 
 h1 {
@@ -55,6 +47,17 @@ h1 {
   }
 }
 
+.link:hover {
+  color: rgb(213, 213, 213);
+}
+
+#code {
+  font-size: 20px;
+}
+
+#code:hover {
+  color: rgb(191, 191, 191);
+}
 .bio {
   border: 1px solid black;
   border-radius: 20px;
@@ -66,15 +69,7 @@ h1 {
     font-size: 20px !important;
   }
 }
-.container {
-  display: flex;
-  flex: 1;
-  gap: 20px;
-  justify-content: center;
-}
-.col-3 {
-  display: inline;
-}
+
 #contacts {
   text-align: center;
   font-size: 30px;
@@ -110,14 +105,15 @@ h1 {
 a {
   text-decoration: none;
   color: rgb(125, 116, 125);
+
 }
 
 .contact-us {
   padding: 12px 16px;
   font-family: "Work Sans", cursive;
   font-weight: 300px;
-  background-color: var(--gold);
-  color: var(--sec-color);
+  background-color: rgb(174, 255, 133);
+  color: var(--primary-color);
   transform: scale(1.05);
 }
 
@@ -150,6 +146,7 @@ a {
   margin-top: 40px;
   justify-content: center;
 }
+
 .nav-links a {
   margin: 20px;
   border-radius: 30px;
@@ -162,18 +159,16 @@ a {
 }
 
 p {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: "Jost", sans-serif;
-}
-hr {
-  border: 1px solid rgb(168, 168, 168);
+  padding: 40px;
 }
 
 .text-start {
   font-family: "Work Sans", serif;
   font-size: 40px;
   font-weight: 600;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center !important;
   border-radius: 8px;
 }
@@ -205,8 +200,8 @@ hr {
 }
 
 .button-73:hover {
-  background-color: var(--gold);
-  box-shadow: #461010 0 -6px 8px inset;
+  background-color: rgb(156, 144, 12);
+  box-shadow: #4c2121 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
@@ -227,17 +222,29 @@ hr {
   padding: none;
 }
 
-#about-section-font {
-  font-size: 60px;
-  font-weight: 400;
+.link {
+        text-decoration: none;
+        margin: 0 20px; 
+        color: rgb(255, 255, 255);
+      }
+nav {
+  padding: 20px;
+  background-color: rgb(170, 252, 255);
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  color: white;/
 }
 
-.navbar {
-  background-color: var(--accent-color) !important;
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
 }
 
 .active {
-  color: white !important;
+  color: rgb(255, 233, 66) !important;
   font-family: "Work Sans", cursive;
 }
 
@@ -252,35 +259,20 @@ hr {
 }
 
 .block-one {
-  background-color: rgb(255, 230, 0);
-  padding: 40px;
+  background-color: rgb(98, 255, 0);
+  padding: none !important;
 }
 
 .block-two {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: none !important;
 }
 
-.block-three {
-  background-color: rgb(255, 255, 255);
-}
-
-.block-four {
-  background-color: rgb(255, 86, 63);
-  padding: 40px;
-}
-.block-five {
-  background-color: rgb(153, 255, 0);
-  padding: 40px;
-}
-
-.block-six {
-  background-color: white;
-  padding: 40px;
-}
 .section-five {
-  background-color: var(--accent-color);
+
+  background-color: rgb(255, 70, 70);
   padding: 50px;
-  color: rgb(124, 124, 255);
+  color: rgb(196, 196, 255);
   font-family: "Comfortaa", cursive;
   font-size: 40px;
 }
@@ -293,15 +285,3 @@ hr {
   font-family: "VT323", monospace;
   font-size: 200px;
 }
-
-.dark {
-  background-image: radial-gradient(
-    circle,
-    #000000,
-    #3d111c,
-    #770e27,
-    #b20428,
-    #eb121a
-  );
-}
-
