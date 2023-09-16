@@ -48,18 +48,29 @@ h1 {
 
 .tags {
   list-style: none;
+    display: flex;
+  justify-content: space-between;
 }
 
 #tag {
   background: linear-gradient(to right, #d2b316, #745f14); 
   border: 2px solid #99841e;
-  border-radius: 50%;
   font-size: 15px;
-  padding: 10px 20px;
-  box-shadow: 2px 4px 6px black;
+  padding: 10px;
+  box-shadow: 2px 4px 8px black;
   color: rgba(251, 233, 183, 0.605);
   font-family: "Dosis", cursive;
   font-weight: 900;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .tags {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    padding-right: 40px;
+  }
 }
 
 .link:hover,
