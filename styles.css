@@ -57,7 +57,9 @@ h1 {
   font-size: 15px;
   padding: 10px 20px;
   box-shadow: 2px 4px 6px black;
-  color: rgb(251, 233, 183);
+  color: rgba(251, 233, 183, 0.605);
+  font-family: "Dosis", cursive;
+  font-weight: 900;
 }
 
 .link:hover,
@@ -169,7 +171,7 @@ a {
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow) inset;
 }
 
 p {
