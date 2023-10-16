@@ -46,22 +46,16 @@
       href="https://fonts.googleapis.com/css2?family=Faustina&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
       rel="stylesheet"
     />
     <style>
       .hero {
-        background: #40E0D0;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-      }
+        background-image: url("https://cdna.artstation.com/p/assets/images/images/046/990/156/large/noah-pitault-ville-dam.jpg?1646481611");
+        background-size: cover;
+      } 
       nav {
         padding: 20px;
         background-color: rgb(170, 252, 255);
@@ -80,17 +74,17 @@
 
       h1 {
         font-family: "Press Start 2P", serif;
-        color:rgb(68, 255, 0);
+        color: rgb(68, 255, 0);
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.683);
         font-size: 60px;
         padding-top: 40px;
       }
       p {
-        color: rgb(255, 208, 208);
+        color: rgb(0, 0, 0);
         padding: 0 60px;
-        border: 4px solid rgb(255, 189, 189);
+        border: 4px solid rgb(255, 237, 186);
         box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.509);
-        background-color: rgba(255, 189, 189, 0.681);
+        background-color: rgba(255, 255, 141, 0.681);
         border-radius: 10px;
         font-family: "VT323", cursive;
         margin: 0 50px;
@@ -99,13 +93,12 @@
       img {
         display: block;
         margin: 0 auto;
-
       }
 
       h3 {
-        font-family: "VT323", serif;
+        font-family: 'Pixelify Sans', sans-serif;
         font-size: 45px;
-        color: rgb(210, 243, 0);
+        color: rgb(255, 255, 255);
         margin-top: 50px;
       }
 
@@ -119,12 +112,13 @@
 
       .link {
         text-decoration: none;
-        margin: 0 20px; 
+        margin: 0 20px;
         color: rgb(255, 255, 255);
-        font-family: "Comfortaa", cursive;
+        font-family: 'Pixelify Sans', sans-serif;
       }
-      
-      .link:hover, .link:active {
+
+      .link:hover,
+      .link:active {
         color: rgba(213, 213, 213, 0.376);
       }
 
@@ -150,42 +144,73 @@
         transform: scale(1.5);
       }
 
+      .resume {
+        max-width: 160px;
+        border-radius: 10px;
+        border: 2px solid rgba(202, 202, 202, 0.797);
+      }
+
+      .resume:hover {
+        transform: scale(1.2);
+      }
+
+      .hero {
+        padding-bottom: 20px;
+      }
+
+      h4 {
+        font-family: 'Pixelify Sans', sans-serif;
+        color: rgba(255, 255, 255, 0.601);
+      }
     </style>
   </head>
   <body>
-      <nav class="d-flex justify-content-between">
-        <a href="index.html"
-          ><img
-            src="https://em-content.zobj.net/source/apple/354/rose_1f339.png"
-            class="logo img-fluid"
-            width="30"
-            alt="logo"
-        /></a>
-        <ul>
-          <li>
-            <a class="link" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="link" href="#">About me</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <h1 class="text-center">about me</h1>
-        <img src="https://66.media.tumblr.com/33d5fb884ba350b0495501625d07da03/tumblr_mqatxtNyuW1rfjowdo1_500.gif" class="img-fluid" width="200"/>
-        <p>
-          Hey! I'm Chae. A multi-hyphenate girl with big dreams. I am a Web
-          Developer, Digital Marketer, Social Media Manager, and Fashion
-          Stylist. I love to help people build their dream brand on
-          platforms like Tiktok, Instagram, YouTube and LinkedIn. If you need someone to help you build a stunning portfolio or website, need help scaling your brand or perhaps you would like a personal stylist, I
-          can help! Feel free to book a discovery call or email me with
-          enquiries. Reach out and follow me on the social platforms linked below.
-          Hope to see you soon.
-        </p>
-        <br />
-      </div>
-      <div class="footer" id="contacts">
-        <div class="row">
+    <nav class="d-flex justify-content-between">
+      <a href="index.html"
+        ><img
+          src="https://em-content.zobj.net/source/apple/354/rose_1f339.png"
+          class="logo img-fluid"
+          width="30"
+          alt="logo"
+      /></a>
+      <ul>
+        <li>
+          <a class="link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="link" href="#">About me</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="text-center">about me</h1>
+      <img
+        src="https://66.media.tumblr.com/33d5fb884ba350b0495501625d07da03/tumblr_mqatxtNyuW1rfjowdo1_500.gif"
+        class="img-fluid"
+        width="200"
+      />
+      <p>
+        Hey there! I'm Chantel Dhlamini - aka Chae, a multi-hyphenate girl with a huge appetite for
+        success. I'm a Front-end Developer, Digital Marketer, Social Media
+        Manager, and Fashion Stylist. My passion is helping people like you
+        create the brand of your dreams on popular platforms: TikTok,
+        Instagram, YouTube, Pinterest and LinkedIn. Whether you need a stunning
+        portfolio or website, want to expand your brand, or need a style
+        upgrade, I'm your gal! Hit me up for a discovery call or shoot me an
+        email with any questions. And don't forget to follow me on my social
+        media handles below. Can't wait to connect with you!
+      </p>
+      <br />
+      <h4 class="text-center">My Resume</h4>
+      <a
+        href="https://www.canva.com/design/DAFtySRlCRo/rXNvvhs73dKIuV55ik001A/view?website#4:shecodes-web-development.-responsive-development.-certificates"
+        target="_blank"
+      >
+        <img class="resume" src="images/resume.png" />
+      </a>
+    </div>
+    <div class="footer" id="contacts">
+      <div class="row">
         <div class="col-4">
           <a href="https://github.com/BIONIChae"
             ><img
@@ -195,7 +220,7 @@
           /></a>
         </div>
         <div class="col-4">
-          <a href="www.linkedin.com/in/chantel-chae-d" />
+          <a href="www.linkedin.com/in/chantel-chae-d">
             <img
               class="img-fluid socials"
               src="https://www.freeiconspng.com/uploads/linkedin-icon-9.png"
@@ -212,11 +237,12 @@
         </div>
         <footer class="img-fluid">
           <h3>Contact me</h3>
-            <a id="code" href="https://github.com/BIONIChae/portfolio"
-              >Open-source code</a
-            >
+          <a id="code" href="https://github.com/BIONIChae/portfolio"
+            >Open-source code</a
+          >
         </footer>
       </div>
-      </div>
+    </div>
   </body>
+  <script src="index.js"></script>
 </html>

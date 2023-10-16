@@ -230,6 +230,7 @@ p {
   background-color: limegreen;
   box-shadow: darkgreen 0 -6px 8px inset;
   transform: scale(1.125);
+  color: rgb(0, 91, 0);
 }
 
 .button-73:active {

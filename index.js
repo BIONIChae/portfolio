@@ -17,3 +17,4 @@ function toggleDarkMode(event) {
 let image = document.querySelector("img");
 let darkmodeSwitch = document.querySelector("#flexSwitchCheckDefault");
 darkmodeSwitch.addEventListener("change", toggleDarkMode);
+
