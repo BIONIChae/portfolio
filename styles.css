@@ -226,11 +226,19 @@ p {
   touch-action: manipulation;
 }
 
-.button-73:hover {
-  background-color: limegreen;
+.btn-one:hover {
+  background-color: rgb(0, 255, 0);
   box-shadow: darkgreen 0 -6px 8px inset;
   transform: scale(1.125);
   color: rgb(0, 91, 0);
+}
+
+.btn-two:hover {
+  background-color: rgb(255, 0, 242);
+  box-shadow: rgb(121, 16, 154) 0 -6px 8px inset;
+  transform: scale(1.125);
+  color: rgb(88, 0, 106);
+
 }
 
 .button-73:active {
@@ -287,6 +295,15 @@ nav li {
   padding: none !important;
 }
 
+.block-three {
+  background-color: rgb(187, 0, 204);
+  padding: none !important;
+}
+
+.block-four {
+  background-color: rgb(255, 247, 0);
+  padding: none !important;
+}
 .section-five {
   background-color: rgb(70, 255, 163);
   padding: 50px;
